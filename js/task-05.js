@@ -1,5 +1,5 @@
 "use strict";
-let resultMessage = "falce";
+let resultMessage = false;
 const firstNameToFind = "spam";
 const secondNameToFind = "sale";
 const checkForSpam = function (message) {
@@ -8,7 +8,7 @@ const checkForSpam = function (message) {
   // console.log(inputWords);
   for (const inputWord of inputWords) {
     if (firstNameToFind === inputWord || secondNameToFind === inputWord) {
-      resultMessage = "true";
+      resultMessage = true;
       break;
     }
   }
